@@ -1,1 +1,175 @@
-/* место для вашего кода */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header__logo {
+    display: block;
+    width: 150px;
+  }
+  
+  .header__logo-image {
+    width: 100%; /* Логотип растягивается по ширине контейнера */
+  }
+  
+  .header__menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header__links-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header__links-list-item {
+    margin: 0;
+  }
+  
+  /* Первая секция (cover) */
+  .cover {
+    position: relative;
+    background: url('images/cover.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .cover__title {
+    font-size: 3rem;
+    color: white;
+    z-index: 2;
+  }
+  
+  .cover__description-text {
+    color: white;
+    z-index: 2;
+  }
+  
+  .bet-button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  /* Секция с карточками (lots) */
+  .lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .lots__card-list-item {
+    flex-grow: 1;
+    width: 30%;
+    min-height: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    height: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .card__title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card__text {
+    flex-grow: 1;
+  }
+  
+  /* Секция об аукционе (about) */
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  
+  .about__logo {
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .about__logo img {
+    width: 80%;
+  }
+  
+  .about__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about__text {
+    font-size: 1rem;
+  }
+  
+  /* Подвал */
+  .footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .footer__address {
+    margin-bottom: 20px;
+  }
+  
+  .footer__menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer__menu-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer__menu-list-item {
+    margin: 0;
+  }
+  
+  .footer__social-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer__social-link img {
+    width: 30px;
+  }
